@@ -178,6 +178,7 @@ MonoBehaviour:
   _levelButtons:
   - <Button>k__BackingField: {fileID: 1897687226}
     <LevelData>k__BackingField: {fileID: 11400000, guid: a687383e4a1f34f38b310d5e07d0258f, type: 2}
+    <OnClickTween>k__BackingField: {fileID: 1348470217}
 --- !u!1 &82902095
 GameObject:
   m_ObjectHideFlags: 0
@@ -308,7 +309,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89a4797d7c674824b0aab41fcabd9948, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _goHomeButton: {fileID: 0}
+  _goHomeButton: {fileID: 4379100488236111749}
 --- !u!1 &99576347
 GameObject:
   m_ObjectHideFlags: 0
@@ -1732,6 +1733,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1302099952}
   m_CullTransparentMesh: 1
+--- !u!114 &1348470217 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 261319131022013765, guid: 77b2e9b2c19ae40688482a5c64a1132f, type: 3}
+  m_PrefabInstance: {fileID: 1897687224}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d0390bd8b8ffd640b34fe25065ff1df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1364169871
 GameObject:
   m_ObjectHideFlags: 0
@@ -3053,7 +3065,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 271ebcabfa7f4d97818349418966ec84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _goHomeButton: {fileID: 0}
+  _goHomeButton: {fileID: 1653239035}
 --- !u!1001 &1897687224
 PrefabInstance:
   m_ObjectHideFlags: 0
