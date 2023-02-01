@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 namespace Project
 {
-    public class QuestionController : MonoBehaviour
+    public class QuestionWindow : MonoBehaviour, IWindow
     {
         [SerializeField]
         private AnswerButton[] _buttons = null;
@@ -21,8 +21,19 @@ namespace Project
         private int _currentQuestionIndex = 0;
 
         private LevelData.QuestionPreset[] _questionPresets = null;
+        private UISystem _uiSystem;
 
-        public void Prepare(Action onWrongClick, Action onAllQuestionAnswers)
+        public bool IsPopup
+        {
+            get => false;
+        }
+        
+        public void Prepare(UISystem uiSystem)
+        {
+            _uiSystem = uiSystem;
+        }
+        
+        public void Setup(Action onWrongClick, Action onAllQuestionAnswers)
         {
             for (int i = 0; i < _buttons.Length; i++)
             {
@@ -32,7 +43,30 @@ namespace Project
                 });
             }
         }
+        
+        public void Show()
+        {
+            gameObject.SetActive(true);
+            
+            Refresh((LevelData)_uiSystem.WindowData[GameStateController.LevelDataKey]);
+        }
+        
+        public void Hide()
+        {
+            gameObject.SetActive(false);
+        }
+        
+        private void Refresh(LevelData levelData)
+        {
+            _questionPresets = levelData.QuestionPresets.Take(levelData.QuestionPresets.Length).ToArray();
+            _questionPresets.Shuffle();
+            _questionLength = _questionPresets.Length;
+            _currentQuestionIndex = 0;
 
+            RefreshAnswerCounter();
+            RefreshQuestion();
+        }
+        
         private void OnButtonClick(Action onWrongClick, Action onAllQuestionAnswers, bool isCorrect)
         {
             if (isCorrect)
@@ -43,7 +77,7 @@ namespace Project
                 
                 if (_currentQuestionIndex < _questionLength)
                 {
-                    ShowQuestion();
+                    RefreshQuestion();
                 }
                 else
                 {
@@ -60,25 +94,17 @@ namespace Project
         {
             _answerCounter.text = $"{_currentQuestionIndex} / {_questionLength}";
         }
-
-        public void Setup(LevelData levelData)
-        {
-            _questionPresets = levelData.QuestionPresets.Take(levelData.QuestionPresets.Length).ToArray();
-            _questionPresets.Shuffle();
-            _questionLength = _questionPresets.Length;
-            _currentQuestionIndex = 0;
-
-            RefreshAnswerCounter();
-            ShowQuestion();
-        }
-
-        private void ShowQuestion()
+        
+        private void RefreshQuestion()
         {
             var questionPreset = _questionPresets[_currentQuestionIndex];
+            var questionPresetAnswers = questionPreset.Answers.Take(questionPreset.Answers.Length).ToArray();
+            
+            questionPresetAnswers.Shuffle();
             
             for (int i = 0; i < _buttons.Length; i++)
             {
-                var answerPreset = questionPreset.Answers[i];
+                var answerPreset = questionPresetAnswers[i];
                 _buttons[i].Refresh(answerPreset.Answer, answerPreset.IsCorrect);
             }
 

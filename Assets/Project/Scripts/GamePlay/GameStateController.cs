@@ -1,38 +1,42 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace Project
 {
     public class GameStateController : MonoBehaviour
     {
+        public const string LevelDataKey = "LevelDataKey";
+        
         [SerializeField]
-        private QuestionController _questionController = null;
+        private QuestionWindow questionWindow = null;
+
         [SerializeField]
-        private LevelController _levelController = null;
+        private MainWindow _mainWindow = null;
+
+        [SerializeField]
+        private UISystem _uiSystem = null;
 
         private void Start()
         {
-            _questionController.gameObject.SetActive(false);
-            _levelController.gameObject.SetActive(true);
+            questionWindow.Setup(OnWrongAnswer, OnAllQuestionAnswers);
 
-            _questionController.Prepare(OnWrongAnswer, OnAllQuestionAnswers);
-            
-            _levelController.Prepare(() =>
+            _mainWindow.Setup((levelData) =>
             {
-                _levelController.gameObject.SetActive(false);
-                _questionController.gameObject.SetActive(true);
+               _uiSystem.ShowWindow<QuestionWindow>(new Dictionary<string, object>()
+               {
+                   {LevelDataKey, levelData}
+               });
             });
         }
 
         private void OnWrongAnswer()
         {
-            _questionController.gameObject.SetActive(false);
-            _levelController.gameObject.SetActive(true);
+            _uiSystem.ShowWindow<FailPopup>();
         }
 
         private void OnAllQuestionAnswers()
         {
-           _questionController.gameObject.SetActive(false);
-           _levelController.gameObject.SetActive(true);
+            _uiSystem.ShowWindow<ResultPopup>();
         }
     }
 }

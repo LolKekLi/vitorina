@@ -11,6 +11,7 @@ public class UIGradient : BaseMeshEffect
     [Range(-180f, 180f)]
     public float m_angle = 0f;
     public bool m_ignoreRatio = true;
+    public AnimationCurve _Curve = null;
 
     public override void ModifyMesh(VertexHelper vh)
     {
@@ -25,9 +26,12 @@ public class UIGradient : BaseMeshEffect
             UIGradientUtils.Matrix2x3 localPositionMatrix = UIGradientUtils.LocalPositionMatrix(rect, dir);
 
             UIVertex vertex = default(UIVertex);
-            for (int i = 0; i < vh.currentVertCount; i++) {
+            
+            for (int i = 0; i < vh.currentVertCount; i++) 
+            {
                 vh.PopulateUIVertex (ref vertex, i);
                 Vector2 localPosition = localPositionMatrix * vertex.position;
+                localPosition = new Vector2(localPosition.x, _Curve.Evaluate(localPosition.y));
                 vertex.color *= Color.Lerp(m_color2, m_color1, localPosition.y);
                 vh.SetUIVertex (vertex, i);
             }
