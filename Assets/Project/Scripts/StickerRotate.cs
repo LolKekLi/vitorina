@@ -23,6 +23,7 @@ namespace Project
         private void OnEnable()
         {
             //FFFFFFF
+            //FFFFFFF
             StartCoroutine(StartRotate());
         }
 
@@ -38,6 +39,8 @@ namespace Project
                 transformRotation.eulerAngles = startRotation;
                 thisTransform.rotation = transformRotation;
 
+                //FFFFFFF
+                //FFFFFFF
                 (startRotation, targetRotation) = (targetRotation, startRotation);
 
                 yield return waitForSeconds;
