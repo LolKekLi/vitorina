@@ -22,6 +22,7 @@ namespace Project
 
         private void OnEnable()
         {
+            //FFFFFFF
             StartCoroutine(StartRotate());
         }
 

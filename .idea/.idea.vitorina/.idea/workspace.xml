@@ -2,33 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eedd98c2-8a0a-47be-951b-6951228200fd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Project/Scripts/UI.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Project/Scripts/UI/UISystem.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Project/Scripts/UI/UISystem.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Project/Scripts/UI/Windows.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Project/Scripts/UI/Windows/FailPopup.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Project/Scripts/UI/Windows/FailPopup.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Project/Scripts/UI/Windows/IWindow.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Project/Scripts/UI/Windows/IWindow.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Project/Scripts/UI/Windows/ResultPopup.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Project/Scripts/UI/Windows/ResultPopup.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.vitorina/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.vitorina/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Scripts/UIGradient.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Scripts/UIGradient.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Demos/Custom Attribute Processors.unitypackage.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Demos/Custom Drawers.unitypackage.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Demos/Editor Windows.unitypackage.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Demos/Sample - RPG Editor.unitypackage.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Fonts/VagWorld/vag-world-bold SDF 2.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Fonts/VagWorld/vag-world-bold SDF 2.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Prefab/LevelButton.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Prefab/LevelButton.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Scenes/MenuScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Scenes/MenuScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Scripts/GamePlay/GameStateController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Scripts/GamePlay/GameStateController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Scripts/GamePlay/LevelController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Scripts/UI/Windows/MainWindow.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Scripts/GamePlay/LevelController.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Scripts/UI/Windows/MainWindow.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Scripts/GamePlay/QuestionController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Scripts/UI/Windows/QuestionWindow.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Scripts/GamePlay/QuestionController.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Scripts/UI/Windows/QuestionWindow.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/DOTweenSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/DOTweenSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.vitorina/.idea/indexLayout.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Scripts/StickerRotate.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Scripts/StickerRotate.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +21,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 5
+}]]></component>
   <component name="ProjectId" id="2L3I45rwiaoT8M1HuyeOJYTDY2s" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -61,11 +39,35 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "1",
     "rider.run.widget.enabled.cache": "false",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "rider.external.source.directories": [
+      "C:\\Users\\Kir\\AppData\\Roaming\\JetBrains\\Rider2023.2\\resharper-host\\DecompilerCache",
+      "C:\\Users\\Kir\\AppData\\Roaming\\JetBrains\\Rider2023.2\\resharper-host\\SourcesCache",
+      "C:\\Users\\Kir\\AppData\\Local\\Symbols\\src"
+    ]
   }
 }]]></component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="E:\UnityVersions\2022.3.16f1\Editor\Unity.exe" />
+      <option name="PROGRAM_PARAMETERS" value="-projectPath D:\UnityProject\Life\vitorina -debugCodeOptimization" />
+      <option name="WORKING_DIRECTORY" value="D:\UnityProject\Life\vitorina" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="E:\UnityVersions\2022.3.16f1\Editor\Unity.exe" />
+      <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath D:\UnityProject\Life\vitorina -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
+      <option name="WORKING_DIRECTORY" value="D:\UnityProject\Life\vitorina" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
     <configuration name="UnitTests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2021.3.16f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath D:\Unity\vitorina -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
@@ -84,10 +86,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="4456">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="4456" />
+      <option name="pid" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -106,6 +108,7 @@
       <workItem from="1675093152769" duration="4392000" />
       <workItem from="1675189820141" duration="5550000" />
       <workItem from="1675237972597" duration="7919000" />
+      <workItem from="1704364511386" duration="15000" />
     </task>
     <servers />
   </component>
